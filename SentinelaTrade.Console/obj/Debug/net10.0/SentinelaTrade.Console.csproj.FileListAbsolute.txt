@@ -1,0 +1,15 @@
+C:\Users\ticot\OneDrive\Documentos\GitHub\SentinelaTrade\SentinelaTrade.Console\bin\Debug\net10.0\SentinelaTrade.Console.exe
+C:\Users\ticot\OneDrive\Documentos\GitHub\SentinelaTrade\SentinelaTrade.Console\bin\Debug\net10.0\SentinelaTrade.Console.deps.json
+C:\Users\ticot\OneDrive\Documentos\GitHub\SentinelaTrade\SentinelaTrade.Console\bin\Debug\net10.0\SentinelaTrade.Console.runtimeconfig.json
+C:\Users\ticot\OneDrive\Documentos\GitHub\SentinelaTrade\SentinelaTrade.Console\bin\Debug\net10.0\SentinelaTrade.Console.dll
+C:\Users\ticot\OneDrive\Documentos\GitHub\SentinelaTrade\SentinelaTrade.Console\bin\Debug\net10.0\SentinelaTrade.Console.pdb
+C:\Users\ticot\OneDrive\Documentos\GitHub\SentinelaTrade\SentinelaTrade.Console\obj\Debug\net10.0\SentinelaTrade.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ticot\OneDrive\Documentos\GitHub\SentinelaTrade\SentinelaTrade.Console\obj\Debug\net10.0\SentinelaTrade.Console.AssemblyInfoInputs.cache
+C:\Users\ticot\OneDrive\Documentos\GitHub\SentinelaTrade\SentinelaTrade.Console\obj\Debug\net10.0\SentinelaTrade.Console.AssemblyInfo.cs
+C:\Users\ticot\OneDrive\Documentos\GitHub\SentinelaTrade\SentinelaTrade.Console\obj\Debug\net10.0\SentinelaTrade.Console.csproj.CoreCompileInputs.cache
+C:\Users\ticot\OneDrive\Documentos\GitHub\SentinelaTrade\SentinelaTrade.Console\obj\Debug\net10.0\SentinelaTrade.Console.sourcelink.json
+C:\Users\ticot\OneDrive\Documentos\GitHub\SentinelaTrade\SentinelaTrade.Console\obj\Debug\net10.0\SentinelaTrade.Console.dll
+C:\Users\ticot\OneDrive\Documentos\GitHub\SentinelaTrade\SentinelaTrade.Console\obj\Debug\net10.0\refint\SentinelaTrade.Console.dll
+C:\Users\ticot\OneDrive\Documentos\GitHub\SentinelaTrade\SentinelaTrade.Console\obj\Debug\net10.0\SentinelaTrade.Console.pdb
+C:\Users\ticot\OneDrive\Documentos\GitHub\SentinelaTrade\SentinelaTrade.Console\obj\Debug\net10.0\SentinelaTrade.Console.genruntimeconfig.cache
+C:\Users\ticot\OneDrive\Documentos\GitHub\SentinelaTrade\SentinelaTrade.Console\obj\Debug\net10.0\ref\SentinelaTrade.Console.dll
