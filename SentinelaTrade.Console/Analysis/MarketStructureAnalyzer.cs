@@ -18,26 +18,56 @@ public class MarketStructureAnalyzer
             .Min(candle => candle.Low);
     }
 
-    public string GetStructure(List<Candle> candles, int period = 20)
+    public string GetStructure(List<Candle> candles)
     {
-        if (candles.Count < period)
+        if (candles.Count < 10)
             return "DADOS INSUFICIENTES";
 
-        var recentCandles = candles.TakeLast(period).ToList();
+        var swingHighs = new List<decimal>();
+        var swingLows = new List<decimal>();
 
-        var firstHalf = recentCandles.Take(period / 2).ToList();
-        var secondHalf = recentCandles.Skip(period / 2).ToList();
+        for (int i = 2; i < candles.Count - 2; i++)
+        {
+            var current = candles[i];
 
-        decimal firstHigh = firstHalf.Max(c => c.High);
-        decimal secondHigh = secondHalf.Max(c => c.High);
+            bool isSwingHigh =
+                current.High > candles[i - 1].High &&
+                current.High > candles[i - 2].High &&
+                current.High > candles[i + 1].High &&
+                current.High > candles[i + 2].High;
 
-        decimal firstLow = firstHalf.Min(c => c.Low);
-        decimal secondLow = secondHalf.Min(c => c.Low);
+            bool isSwingLow =
+                current.Low < candles[i - 1].Low &&
+                current.Low < candles[i - 2].Low &&
+                current.Low < candles[i + 1].Low &&
+                current.Low < candles[i + 2].Low;
 
-        if (secondHigh > firstHigh && secondLow > firstLow)
+            if (isSwingHigh)
+                swingHighs.Add(current.High);
+
+            if (isSwingLow)
+                swingLows.Add(current.Low);
+        }
+
+        if (swingHighs.Count < 2 || swingLows.Count < 2)
+            return "LATERAL";
+
+        var previousHigh = swingHighs[^2];
+        var lastHigh = swingHighs[^1];
+
+        var previousLow = swingLows[^2];
+        var lastLow = swingLows[^1];
+
+        bool higherHigh = lastHigh > previousHigh;
+        bool higherLow = lastLow > previousLow;
+
+        bool lowerHigh = lastHigh < previousHigh;
+        bool lowerLow = lastLow < previousLow;
+
+        if (higherHigh && higherLow)
             return "ALTA";
 
-        if (secondHigh < firstHigh && secondLow < firstLow)
+        if (lowerHigh && lowerLow)
             return "BAIXA";
 
         return "LATERAL";
