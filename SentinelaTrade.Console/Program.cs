@@ -7,6 +7,7 @@ var marketService = new BybitMarketService();
 var candleService = new CandleService();
 var structureAnalyzer = new MarketStructureAnalyzer();
 var tradeFilter = new TradeFilter();
+var confirmationAnalyzer = new ConfirmationAnalyzer();
 
 string[] symbols =
 [

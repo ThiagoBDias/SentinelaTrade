@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SentinelaTrade.Console")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f76159c6299771bf18ed307be47a1d9749d08c51")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b7c740d23dd8f9a30a4d2a61d144644ca504411")]
 [assembly: System.Reflection.AssemblyProductAttribute("SentinelaTrade.Console")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SentinelaTrade.Console")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
